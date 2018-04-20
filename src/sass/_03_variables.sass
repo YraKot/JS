@@ -1,0 +1,37 @@
+// .controls-wrap:root
+$color_1: var(--base)
+
+root 
+	--base: #ffc600
+	--spacing: 10px
+	--blur: 10px
+
+
+
+.controls-wrap
+	min-height: 100vh
+	height: 100%
+	text-align: center
+	background: #193549
+	color: white
+	font-family: 'helvetica neue', sans-serif
+	font-weight: 100
+	font-size: 30px
+
+	h2 
+		margin: 0
+		padding-top: 20px
+		.hl 
+			color: $color_1
+
+	.controls
+		margin-bottom: 50px
+		input
+			width: 150px
+	img 
+		padding: var(--spacing)
+		background: var(--base)
+		filter: blur(var(--blur))
+		max-width: 100%
+		max-height: 100%
+		object-fit: cover

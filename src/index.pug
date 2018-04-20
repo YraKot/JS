@@ -1,0 +1,14 @@
+extends _layouts/home
+
+block head_end
+	link(rel="stylesheet" href="/css/style.css") 
+
+block content
+	//- include _partials/header
+	include _partials/01_dramkit
+	include _partials/02_clock
+	include _partials/03_variables
+	include _partials/04_array
+	
+block body_end
+	script(type="text/javascript" src="/js/app.min.js")
